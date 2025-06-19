@@ -42,9 +42,9 @@ function App() {
       scrollTrigger: {
         trigger: ".work",
         pin: true,
-        scrub: 0.5,
+        scrub: 0.5, // <-- will override for mobile below
         start: "top 0%",
-        end: "bottom 20%",
+        end: "bottom 20%", // <-- will override for mobile below
         // markers: true,
         invalidateOnRefresh: true,
       },
@@ -70,6 +70,10 @@ function App() {
     });
     // mobile setup code here...
     mm.add("(max-width: 799px)", () => {
+      // Slow down effect on mobile by increasing scrub and scroll distance
+      tl.scrollTrigger.scrub = 1.5; // increase scrub for smoother, slower effect
+      tl.scrollTrigger.end = "bottom 0%"; // extend scroll distance for slower progress
+
       tl.fromTo(
         ".work-item:not(:first-child)",
         {
