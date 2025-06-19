@@ -1,0 +1,120 @@
+@import url("https://fonts.googleapis.com/css2?family=Unbounded:wght@200..900&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap");
+
+:root {
+  --text-color: #181818;
+  --background: #dddddd;
+  --background-secondary: #c0c0c0;
+  --foreground: #ffffff;
+  --primary: rgba(255, 243, 76, 1);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --text-color: #ffffff;
+    --background: #0a0a0a;
+    --background-secondary: #1a1a1a;
+    --foreground: #000000;
+  }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  color: var(--text-color);
+  background: var(--background);
+}
+
+p {
+  font-family: "Urbanist", sans-serif;
+}
+
+.section {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  position: relative;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.container {
+  width: 100%;
+  margin: 0 auto;
+  max-width: 1400px;
+  box-sizing: border-box;
+}
+
+/* Utility */
+.urbanist {
+  font-family: "Urbanist", sans-serif;
+}
+.unbounded {
+  font-family: "Unbounded", sans-serif;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+.large-heading {
+  font-size: 3rem;
+  line-height: 3.5rem;
+  font-weight: 900;
+}
+
+.medium-heading {
+  font-size: 2.5rem;
+  line-height: 3rem;
+  font-weight: 800;
+}
+
+.small-heading {
+  font-size: 2rem;
+  line-height: 2.5rem;
+  font-weight: 700;
+}
+
+@media screen and (max-width: 768px) {
+  .large-heading {
+    font-size: 2.5rem;
+    line-height: 3rem;
+  }
+
+  .medium-heading {
+    font-size: 2rem;
+    line-height: 2.5rem;
+  }
+
+  .small-heading {
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+}
+
+.content-text {
+  margin: 0;
+  font-weight: 400;
+  font-size: 1.5rem;
+  line-height: 1.8rem;
+  font-family: "Urbanist", sans-serif;
+}
+
+.primary-text {
+  color: var(--primary);
+}
+
+.primary-bg {
+  background-color: var(--primary);
+}

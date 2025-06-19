@@ -1,0 +1,16 @@
+.about {
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.about .container {
+  gap: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+@media screen and (max-width: 768px) {
+  .about {
+    padding: 20px;
+  }
+}

@@ -1,0 +1,27 @@
+.hero {
+  padding: 20px;
+  /* background */
+  opacity: 0.8;
+  box-sizing: border-box;
+  background-color: var(--background);
+  background-image: repeating-radial-gradient(
+      circle at 0 0,
+      transparent 0,
+      var(--background) 15px
+    ),
+    repeating-linear-gradient(transparent, var(--primary));
+}
+
+.hero-links {
+  gap: 10px;
+  display: flex;
+  margin-top: 10px;
+}
+
+.hero-links a {
+}
+
+@media screen and (max-width: 768px) {
+  .hero {
+  }
+}
