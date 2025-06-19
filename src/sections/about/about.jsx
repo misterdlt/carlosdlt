@@ -6,7 +6,7 @@ export default function AboutSection() {
     <div className="section about">
       <TechTicker />
       <div className="container">
-        <h3 className="large-heading unbounded primary-text">About me.</h3>
+        <h3 className="large-heading unbounded primary-text uppercase">About.</h3>
         <p className="urbanist content-text">
           My creative journey started in a graphic design class where I stumbled
           upon a website builder called Adobe Dreamweaver. A tool similar to

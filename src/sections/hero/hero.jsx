@@ -8,17 +8,16 @@ export default function HeroSection() {
         <h1 className="small-heading urbanist">
           Hi, I'm <span className="highlight">Carlos</span>.
         </h1>
-        <p className="unbounded large-heading">
-          I'm a software engineer with a passion for building modern,
-          responsive, and user-friendly digital solutions that make a
-          difference.
+        <p className="unbounded large-heading hero-text">
+          I'm a software engineer with a passion for building digital solutions
+          that people love to use.
         </p>
         <div className="hero-links">
           <a href="mailto:cdltg@outlook.com">
-            <FaEnvelope size={32} color="var(--primary)" />
+            <FaEnvelope size={25} color="var(--primary)" /> Email
           </a>
           <a href="https://www.linkedin.com/in/carlosdlt/">
-            <FaLinkedin size={30} color="var(--primary)" />
+            <FaLinkedin size={25} color="var(--primary)" /> LinkedIn
           </a>
         </div>
       </div>

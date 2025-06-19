@@ -1,7 +1,7 @@
 import Lenis from "lenis";
 import { useRef } from "react";
 import { useGSAP } from "@gsap/react";
-import { gsap, ScrollTrigger } from "gsap/all";
+import { gsap, ScrollTrigger, SplitText } from "gsap/all";
 
 import "./App.css";
 import WorkSection from "./sections/work/work";
@@ -20,6 +20,25 @@ function App() {
   gsap.registerPlugin(ScrollTrigger);
 
   useGSAP(() => {
+    // hero Text
+    gsap.set(".split", { opacity: 1 });
+
+    let split = SplitText.create(".hero-text", {
+      type: "chars, words",
+      mask: "chars",
+    });
+
+    gsap.from(split.chars, {
+      duration: 1,
+      yPercent: "random([-150, 150])",
+      xPercent: "random([-150, 150])",
+      stagger: {
+        from: "random",
+        amount: 0.6,
+      },
+      ease: "power3.out",
+    });
+
     // Hero through Work Section
     gsap.timeline({
       scrollTrigger: {
@@ -30,7 +49,7 @@ function App() {
         snap: {
           snapTo: 1 / 2,
           duration: { min: 0.25, max: 0.75 },
-          delay: 0.125,
+          delay: 0.01, // reduced delay for faster snap
           ease: "power1.inOut",
         },
       },
@@ -96,6 +115,7 @@ function App() {
         start: "top bottom+=1",
         end: "bottom bottom",
         snap: [0, 1],
+        delay: 0.01, // reduced delay for faster snap
       },
     });
   }, []);
