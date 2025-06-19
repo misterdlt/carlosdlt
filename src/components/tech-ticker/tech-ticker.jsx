@@ -12,7 +12,12 @@ import {
 } from "react-icons/fa";
 import "./tech-ticker.css";
 import { DiJqueryLogo, DiMongodb, DiMysql } from "react-icons/di";
-import { SiNextdotjs, SiExpress, SiTypescript } from "react-icons/si";
+import {
+  SiNextdotjs,
+  SiExpress,
+  SiTypescript,
+  SiGreensock,
+} from "react-icons/si";
 
 export default function TechTicker() {
   const ICON_SIZE = 30;
@@ -44,6 +49,10 @@ export default function TechTicker() {
     {
       icon: <SiTypescript size={ICON_SIZE} />,
       name: "TypeScript",
+    },
+    {
+      icon: <SiGreensock size={ICON_SIZE} />,
+      name: "GSAP",
     },
     {
       icon: <FaJava size={ICON_SIZE} />,

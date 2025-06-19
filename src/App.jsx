@@ -27,7 +27,6 @@ function App() {
         start: "top top",
         endTrigger: ".work",
         end: "bottom bottom",
-        markers: true,
         snap: {
           snapTo: 1 / 2,
           duration: { min: 0.25, max: 0.75 },

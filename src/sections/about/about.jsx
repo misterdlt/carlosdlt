@@ -15,11 +15,8 @@ export default function AboutSection() {
           <br />
           <br />
           It wasn't long before I began exploring other website builders like
-          WordPress and Webflow. Years of using these tools and I learned a lot
-          about HTML/CSS and decided it was time to take the plunge into coding.
-          I learned JavaScript and quickly was fascinated by how code could
-          bring designs to life and create unique, interactive experiences for
-          users.
+          WordPress and Webflow. Then I decided it was time to take the plunge
+          into coding so I learned JavaScript and ReactJS.
           <br />
           <br />
           Fast forward a few years and I'm now a Software Engineer with
