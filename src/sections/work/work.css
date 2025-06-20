@@ -1,6 +1,7 @@
 .work {
   padding: 20px;
   display: flex;
+  height: 90vh;
   position: relative;
   flex-direction: row;
   box-sizing: border-box;
@@ -74,7 +75,12 @@
     padding: 20px;
     align-items: center;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;;
+  }
+
+  .work h2 {
+    position: relative;
+    left: 0;
   }
 
   .work-item-content {

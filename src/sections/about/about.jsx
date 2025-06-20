@@ -3,7 +3,7 @@ import TechTicker from "../../components/tech-ticker/tech-ticker";
 
 export default function AboutSection() {
   return (
-    <div className="section about">
+    <div className="about">
       <TechTicker />
       <div className="container">
         <h3 className="large-heading unbounded primary-text uppercase">About.</h3>

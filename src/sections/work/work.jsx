@@ -38,7 +38,7 @@ export default function WorkSection({ ref }) {
   ];
 
   return (
-    <div className="section work" ref={ref}>
+    <div className="work" ref={ref}>
       <h2 className="unbounded primary-text uppercase">Work.</h2>
       {projects.map((project, index) => (
         <div className="work-item" key={index}>

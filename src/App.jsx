@@ -39,22 +39,6 @@ function App() {
       ease: "power3.out",
     });
 
-    // Hero through Work Section
-    gsap.timeline({
-      scrollTrigger: {
-        trigger: ".hero",
-        start: "top top",
-        endTrigger: ".work",
-        end: "bottom bottom",
-        snap: {
-          snapTo: 1 / 2,
-          duration: { min: 0.25, max: 0.75 },
-          delay: 0.01, // reduced delay for faster snap
-          ease: "power1.inOut",
-        },
-      },
-    });
-
     // Horizontal Scroll Card Stack for Work Section
     let spacer = 45;
     const tl = gsap.timeline({
@@ -106,17 +90,6 @@ function App() {
           x: 0,
         }
       );
-    });
-
-    // Back to Vertical Scroll
-    gsap.timeline({
-      scrollTrigger: {
-        trigger: ".footer",
-        start: "top bottom+=1",
-        end: "bottom bottom",
-        snap: [0, 1],
-        delay: 0.01, // reduced delay for faster snap
-      },
     });
   }, []);
 

@@ -36,6 +36,7 @@
 }
 
 @media screen and (max-width: 768px) {
-  .hero {
+  .hero-text {
+    line-height: 2.5rem;
   }
 }
